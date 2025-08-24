@@ -23,11 +23,11 @@ return "Roll No: " + rollNo + ", Name: " + name + ", Age: " + age + ", Marks: " 
 }
 
 public class Chat{
- ArrayList<Student> studentlist=new ArrayList<>();
+ ArrayList<Student> studentList=new ArrayList<>();
 
  // add student
  public static void addStudent(int rollNo,String name,int age,int marks){
-    studentlist.add(new Student(rollNo,name,age,marks));
+    studentList.add(new Student(rollNo,name,age,marks));
 
  }
 

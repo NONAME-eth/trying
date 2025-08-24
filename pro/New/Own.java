@@ -1,6 +1,14 @@
 package pro.New;
 
 import java.util.*;
-public class Own{
+
+// Student logic 
+ class Student{ 
+
+    String name;
+    int rollno;
+    double marks;
+
+
 
 }
