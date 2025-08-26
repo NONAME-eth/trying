@@ -1,10 +1,10 @@
 package pro.NewTo;
 
 import java.util.*;
-public class SecondToDo {
+public class PMSMenu {
  public static void main(String[] args){
  
- Operation obj=new Operation();
+ PMSOperation obj=new PMSOperation();
 
     Scanner sc=new Scanner(System.in);
 
@@ -18,9 +18,20 @@ public class SecondToDo {
               System.out.println("5. Search Product");
                  System.out.println("6. Exit");
 
-            System.out.println("Ente Your Choice: ");
-            int choice=sc.nextInt();
+                 int choice=0;
 
+        try{
+               System.out.println("Enter Your Choice: ");
+             choice=sc.nextInt();
+            sc.nextLine();
+        }  
+        catch(InputMismatchException e){
+          System.out.println("Invalid Input "+" Enter choice in numbers only(1-6) ");
+          sc.nextLine();
+          return;
+
+        }       
+           
             switch(choice){
 
                case 1:
@@ -46,10 +57,10 @@ public class SecondToDo {
 
                 case 6:
                   System.out.println("Exit");
-               break;
-
+                  return;
+           
                default:
-
+           
             }
 
     }
